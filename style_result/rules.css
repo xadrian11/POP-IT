@@ -1,0 +1,55 @@
+/* Główna sekcja */
+.rules {
+    position: relative;
+    background-color: #ffffff; /* Białe tło */
+    background-image: url('../images/bg-grid2.png'); 
+    background-repeat: no-repeat, no-repeat; /* Zapobiega powtarzaniu obu obrazów */
+    background-position: 45% 50%, 83% 54%;
+    background-size: 700px 400px, 400px 300px; /* Rozmiary: pierwszy (owal), drugi (obrazek ręki) */
+    padding: 50px 20px;
+    overflow: hidden; /* Ukrywa wystające elementy */
+}
+
+/* Kontener */
+.rules__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Treść */
+.rules__content {
+    max-width: 50%;
+    padding-left: 50px;
+    z-index: 2;
+}
+
+.rules__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rules__description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Obrazek nad owalem */
+.rules__image {
+    width: 400px; /* Szerokość obrazka */
+    height: 300px; /* Wysokość obrazka */
+    background-image: url('../images/photo.jpg'); /* Alternatywny sposób na osobny obrazek */
+    background-size: cover; /* Dopasowanie obrazka */
+    background-position: right center; /* Pozycja obrazu: prawa strona, wyśrodkowana w pionie */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    z-index: 2;
+    margin-right: 2rem;
+}
+

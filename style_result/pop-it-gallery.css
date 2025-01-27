@@ -1,0 +1,67 @@
+.pop-it-gallery {
+    background-color: #b8f34a; /* Zielone tło sekcji */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pop-it-gallery__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+/* Kontener z przedmiotami */
+.pop-it-gallery__items {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px; 
+    flex-wrap: wrap; /* Przedmioty będą zawijać się w kolejnych rzędach, jeśli brak miejsca */
+}
+
+/* Każdy element */
+.pop-it-gallery__item {
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pop-it-gallery__item:hover {
+    transform: scale(1.05); /* Powiększenie elementu */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Intensywniejszy cień */
+}
+
+
+.pop-it-gallery__image {
+    width: 60%;
+    height: auto; /* Zachowanie proporcji */
+    margin-bottom: 15px;
+    border-radius: 5px; /* Lekko zaokrąglone obrazki */
+}
+
+.pop-it-gallery__name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+
+.pop-it-gallery__button {
+    background-color: rgb(255, 140, 0);
+    color: black;
+    border: none;
+    padding: 13px 64px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+
+.pop-it-gallery__button:hover {
+    background-color: #e67600; 
+}

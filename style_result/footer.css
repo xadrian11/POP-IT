@@ -1,0 +1,38 @@
+/* Główna sekcja stopki */
+.footer {
+    background-color: #333333; /* Ciemnoszare tło */
+    color: #ffffff; /* Biały tekst */
+    padding: 20px 40px; /* Wewnętrzne odstępy */
+    font-family: Arial, sans-serif; /* Czcionka */
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between; /* Rozdzielenie logo i linków */
+    align-items: center; /* Wyrównanie w pionie */
+    max-width: 1200px; /* Maksymalna szerokość stopki */
+    margin: 0 auto; /* Wyśrodkowanie zawartości */
+}
+
+.footer__logo {
+    padding: 0 50px;
+    font-size: 12px; /* Rozmiar tekstu logo */
+    font-weight: bold; /* Pogrubienie */
+    color: #ffffff; /* Biały tekst */
+}
+
+.footer__nav {
+    display: flex;
+    gap: 70px; /* Odstęp między linkami */
+}
+
+.footer__link {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    font-size: 14px; /* Rozmiar tekstu linków */
+    color: #ffffff; /* Biały tekst */
+    transition: color 0.3s ease; /* Animacja zmiany koloru */
+}
+
+.footer__link:hover {
+    color: #aaaaaa; /* Jasnoszary kolor przy najechaniu */
+}

@@ -1,0 +1,100 @@
+.header {
+    padding: 20px 40px;
+    z-index: 1; /* Nagłówek nad tłem */
+    background-color: #fc2f20; /* Czerwone tło */
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    font-weight: bold;
+    color: black;
+    padding-left: 3rem;
+}
+
+/* Nawigacja (domyślnie ukryta na małych ekranach) */
+.header__nav {
+    display: flex;
+    gap: 40px;
+    padding: 0 2.5rem;
+}
+
+.header__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+/* Menu hamburgerowe */
+.header__hamburger {
+    display: none; /* Ukrycie na dużych ekranach */
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.header__hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* Responsywność dla ekranów do 800px */
+@media (max-width: 800px) {
+    .header__nav {
+        display: none; /* Domyślnie ukrycie menu nawigacyjnego */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        background-color: #fc2f20;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__nav.header__nav--active {
+        display: flex; /* Pokazanie menu po aktywacji */
+    }
+
+    .header__hamburger {
+        display: flex; /* Wyświetlenie przycisku hamburgera */
+    }
+}
+
+/* Powyżej 800px - standardowe menu */
+@media (min-width: 801px) {
+    .header__hamburger {
+        display: none; /* Ukrycie przycisku hamburgera */
+    }
+
+    .header__nav {
+        display: flex; /* Domyślne widoczne menu */
+    }
+}
+
+
+
+
+
+
+
+
+
